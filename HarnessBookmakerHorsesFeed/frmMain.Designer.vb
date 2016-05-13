@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class frmMain
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,9 +22,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.btnRun = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'btnRun
+        '
+        Me.btnRun.Location = New System.Drawing.Point(138, 91)
+        Me.btnRun.Name = "btnRun"
+        Me.btnRun.Size = New System.Drawing.Size(227, 110)
+        Me.btnRun.TabIndex = 0
+        Me.btnRun.Text = "Run"
+        Me.btnRun.UseVisualStyleBackColor = True
+        '
+        'frmMain
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.Text = "Form1"
+        Me.ClientSize = New System.Drawing.Size(488, 315)
+        Me.Controls.Add(Me.btnRun)
+        Me.Name = "frmMain"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "Harness Bookmaker Horses Feed"
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents btnRun As Button
 End Class
